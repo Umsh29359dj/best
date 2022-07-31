@@ -38,7 +38,8 @@ RUN wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testb
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/0 && chmod +x /usr/local/bin/0 && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/h && chmod +x /usr/local/bin/h && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/hl && chmod +x /usr/local/bin/hl && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/up && chmod +x /usr/local/bin/up
+    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/up && chmod +x /usr/local/bin/up && \
+    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/psa && chmod +x /usr/local/bin/psa
     
 
 
