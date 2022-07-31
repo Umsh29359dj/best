@@ -31,9 +31,13 @@ RUN echo "ZWNobyAkQkFTRV9VUkxfT0ZfQk9ULyQocHl0aG9uMyAtYyAnZnJvbSB1cmxsaWIucGFyc2
 #PSA unofficial telegram channel bypass script
 RUN echo "aWYgWyAkMSBdCnRoZW4KcHl0aG9uMyAtYyAiZXhlYyhcImltcG9ydCByZXF1ZXN0cyBhcyBycSxz\neXNcbmZyb20gYmFzZTY0IGltcG9ydCBiNjRkZWNvZGUgYXMgZFxucz1ycS5nZXQoc3lzLmFyZ3Zb\nMV0pLnJlcXVlc3QudXJsLnNwbGl0KCc9JywxKVsxXVxuZm9yIGkgaW4gcmFuZ2UoMyk6IHM9ZChz\nKVxucHJpbnQoJ2h0dHAnK3MuZGVjb2RlKCkucnNwbGl0KCdodHRwJywxKVsxXSlcIikiICQxCmVs\nc2UKZWNobyAiYmFkIHJlcSIKZmkK" | base64 -d > /usr/bin/psa;chmod +x /usr/bin/psa
 
-#Mdisk downloader Script Play in Splayer or MX Player 
-RUN wget https://dl.dropboxusercontent.com/s/dv3ykiw81dnfqgl/md.py
 RUN echo 'python3 md.py "$1"' > /usr/local/bin/md && chmod +x /usr/local/bin/md
+RUN echo 'python3 stfly.py "$1"' > /usr/local/bin/stf && chmod +x /usr/local/bin/stf
+RUN echo 'python3 uptobox.py "$1"' > /usr/local/bin/utb && chmod +x /usr/local/bin/utb
+RUN echo 'python3 tmf.py "$1"' > /usr/local/bin/tmf && chmod +x /usr/local/bin/tmf
+RUN echo 'python3 up.py "$1"' > /usr/local/bin/up && chmod +x /usr/local/bin/up
+RUN echo 'python3 mv.py "$1"' > /usr/local/bin/mv && chmod +x /usr/local/bin/mv
+RUN echo 'python3 tup.py "$1"' > /usr/local/bin/tup && chmod +x /usr/local/bin/tup
 
 #Server Files remove cmd
 RUN echo "cm0gLXJmICpta3YgKmVhYzMgKm1rYSAqbXA0ICphYzMgKmFhYyAqemlwICpyYXIgKnRhciAqZHRzICptcDMgKjNncCAqdHMgKmJkbXYgKmZsYWMgKndhdiAqbTRhICpta2EgKndhdiAqYWlmZiAqN3ogKnNydCAqdnh0ICpzdXAgKmFzcyAqc3NhICptMnRz" | base64 -d > /usr/local/bin/0 && chmod +x /usr/local/bin/0
