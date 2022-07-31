@@ -35,7 +35,7 @@ RUN echo 'python3 stfly.py "$1"' > /usr/local/bin/stf && chmod +x /usr/local/bin
 RUN echo 'python3 uptobox.py "$1"' > /usr/local/bin/utb && chmod +x /usr/local/bin/utb
 RUN echo 'python3 tmf.py "$1"' > /usr/local/bin/tmf && chmod +x /usr/local/bin/tmf
 RUN echo 'python3 up.py "$1"' > /usr/local/bin/up && chmod +x /usr/local/bin/up
-RUN echo 'python3 mv.py "$1"' > /usr/local/bin/mv && chmod +x /usr/local/bin/mv
+RUN echo 'python3 mv.py "$1"' > /usr/local/bin/mv && chmod +x /usr/local/bin/ml
 RUN echo 'python3 tup.py "$1"' > /usr/local/bin/tup && chmod +x /usr/local/bin/tup
 
 #Server Files remove cmd
