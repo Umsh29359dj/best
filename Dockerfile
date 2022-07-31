@@ -28,10 +28,6 @@ RUN curl -L https://github.com/jaskaranSM/drivedlgo/releases/download/1.5/drived
     7z x drivedl.gz && mv drivedlgo /usr/bin/drivedl && chmod +x /usr/bin/drivedl && rm drivedl.gz
 RUN echo 'python3 uptobox.pyc "$1"' > /usr/local/bin/utb && chmod +x /usr/local/bin/utb
 
-
-#PSA unofficial telegram channel bypass script
-RUN echo "aWYgWyAkMSBdCnRoZW4KcHl0aG9uMyAtYyAiZXhlYyhcImltcG9ydCByZXF1ZXN0cyBhcyBycSxz\neXNcbmZyb20gYmFzZTY0IGltcG9ydCBiNjRkZWNvZGUgYXMgZFxucz1ycS5nZXQoc3lzLmFyZ3Zb\nMV0pLnJlcXVlc3QudXJsLnNwbGl0KCc9JywxKVsxXVxuZm9yIGkgaW4gcmFuZ2UoMyk6IHM9ZChz\nKVxucHJpbnQoJ2h0dHAnK3MuZGVjb2RlKCkucnNwbGl0KCdodHRwJywxKVsxXSlcIikiICQxCmVs\nc2UKZWNobyAiYmFkIHJlcSIKZmkK" | base64 -d > /usr/bin/psa;chmod +x /usr/bin/psa
-
 RUN wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/gup && chmod +x /usr/local/bin/gup && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/l && chmod +x /usr/local/bin/l && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/g && chmod +x /usr/local/bin/g && \
