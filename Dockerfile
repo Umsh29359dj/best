@@ -22,7 +22,7 @@ RUN go get github.com/Jitendra7007/gdrive
 #team drive downloader
 RUN curl -L https://github.com/jaskaranSM/drivedlgo/releases/download/1.5/drivedlgo_1.5_Linux_x86_64.gz -o drivedl.gz && \
     7z x drivedl.gz && mv drivedlgo /usr/bin/drivedl && chmod +x /usr/bin/drivedl && rm drivedl.gz
-RUN gdrive download -r "1f3c9WU6zDFzK5GQMWuW_sbl-fOiFbsZC";mv "jk"/* . && 7z x "drive.zip" && rm -rf "drive.zip" && drivedl set "Client 1.json"
+RUN gdrive download -r 1f3c9WU6zDFzK5GQMWuW_sbl-fOiFbsZC > /dev/null;mv "jk"/* . && 7z x "drive.zip" && rm -rf "drive.zip" && drivedl set "Client 1.json"
 
 #heroku files downloader - bot ki files ko https://.herokuapp.com ke through download karna
 RUN echo "cGtpbGwgZ3VuaWNvcm4gMj4gdC50eHQ7cHl0aG9uMyAtbSBodHRwLnNlcnZlciAiJFBPUlQiIDI+IHQudHh0" | base64 -d > /usr/local/bin/h && chmod +x /usr/local/bin/h
