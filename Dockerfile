@@ -29,12 +29,13 @@ RUN curl -L https://github.com/jaskaranSM/drivedlgo/releases/download/1.5/drived
 RUN echo 'python3 uptobox.pyc "$1"' > /usr/local/bin/utb && chmod +x /usr/local/bin/utb
 
 RUN wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/gup && chmod +x /usr/local/bin/gup && \
+    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/up && chmod +x /usr/local/bin/up && \
+    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/python3%20.up/fup && chmod +x /usr/local/bin/fup && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/l && chmod +x /usr/local/bin/l && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/g && chmod +x /usr/local/bin/g && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/0 && chmod +x /usr/local/bin/0 && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/h && chmod +x /usr/local/bin/h && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/hl && chmod +x /usr/local/bin/hl && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/up && chmod +x /usr/local/bin/up && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/psa && chmod +x /usr/local/bin/psa && \
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/md && chmod +x /usr/local/bin/md
     
