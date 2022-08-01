@@ -27,20 +27,6 @@ RUN go get github.com/Jitendra7007/gdrive
 RUN curl -L https://github.com/jaskaranSM/drivedlgo/releases/download/1.5/drivedlgo_1.5_Linux_x86_64.gz -o drivedl.gz && \
     7z x drivedl.gz && mv drivedlgo /usr/bin/drivedl && chmod +x /usr/bin/drivedl && rm drivedl.gz
 
-RUN wget -P /usr/src/app/.gdrive/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/.gdrive/token_v2.json && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/gup && chmod +x /usr/local/bin/gup && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/up && chmod +x /usr/local/bin/up && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/fup && chmod +x /usr/local/bin/fup && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/l && chmod +x /usr/local/bin/l && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/g && chmod +x /usr/local/bin/g && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/0 && chmod +x /usr/local/bin/0 && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/h && chmod +x /usr/local/bin/h && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/hl && chmod +x /usr/local/bin/hl && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/psa && chmod +x /usr/local/bin/psa && \
-    wget -P /usr/local/bin/ https://raw.githubusercontent.com/Jitendra7007/testbot/main/md && chmod +x /usr/local/bin/md
-    
-
-
 COPY . .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
