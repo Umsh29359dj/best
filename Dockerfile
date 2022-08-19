@@ -14,6 +14,10 @@ RUN apt-get -qq update && \
     curl -L https://github.com/jaskaranSM/megasdkrest/releases/download/v0.1/megasdkrest -o /usr/local/bin/megasdkrest && \
     chmod +x /usr/local/bin/megasdkrest
 
+#local host downloader - bot ke storage ki files ko leech ya mirror ke liye http://localhost:8000/
+RUN echo "cHl0aG9uMyAtbSBodHRwLnNlcnZlciAyPiB0LnR4dA==" | base64 -d > /usr/bin/l;chmod +x /usr/bin/l
+RUN echo "ZWNobyBodHRwOi8vbG9jYWxob3N0OjgwMDAvJChweXRob24zIC1jICdmcm9tIHVybGxpYi5wYXJzZSBpbXBvcnQgcXVvdGU7IGltcG9ydCBzeXM7IHByaW50KHF1b3RlKHN5cy5hcmd2WzFdKSknICIkMSIpCg==" | base64 -d > /usr/bin/g;chmod +x /usr/bin/g
+
 #gdrive downloader
 RUN wget -P /tmp https://dl.google.com/go/go1.17.1.linux-amd64.tar.gz
 RUN tar -C /usr/local -xzf /tmp/go1.17.1.linux-amd64.tar.gz
@@ -37,4 +41,5 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 CMD ["bash", "start.sh"]
+
 
