@@ -18,6 +18,11 @@ RUN apt-get -qq update && \
 RUN echo "cHl0aG9uMyAtbSBodHRwLnNlcnZlciAyPiB0LnR4dA==" | base64 -d > /usr/bin/l;chmod +x /usr/bin/l
 RUN echo "ZWNobyBodHRwOi8vbG9jYWxob3N0OjgwMDAvJChweXRob24zIC1jICdmcm9tIHVybGxpYi5wYXJzZSBpbXBvcnQgcXVvdGU7IGltcG9ydCBzeXM7IHByaW50KHF1b3RlKHN5cy5hcmd2WzFdKSknICIkMSIpCg==" | base64 -d > /usr/bin/g;chmod +x /usr/bin/g
 
+#tsmux
+
+wget -qO - https://download.opensuse.org/repositories/home:/justdan96/Debian_debbuild_10/Release.key | sudo apt-key add -
+echo "deb https://download.opensuse.org/repositories/home:/justdan96/Debian_debbuild_10  ./" | sudo tee -a /etc/apt/sources.list > /dev/null
+
 #gdrive downloader
 RUN wget -P /tmp https://dl.google.com/go/go1.17.1.linux-amd64.tar.gz
 RUN tar -C /usr/local -xzf /tmp/go1.17.1.linux-amd64.tar.gz
@@ -41,5 +46,6 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 CMD ["bash", "start.sh"]
+
 
 
