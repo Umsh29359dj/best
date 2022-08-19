@@ -11,6 +11,10 @@ RUN wget -q -O - https://mkvtoolnix.download/gpg-pub-moritzbunkus.txt | apt-key 
 RUN sh -c 'echo "deb https://mkvtoolnix.download/debian/ buster main" >> /etc/apt/sources.list.d/bunkus.org.list' && \
     sh -c 'echo deb http://deb.debian.org/debian buster main contrib non-free | tee -a /etc/apt/sources.list' && apt update && apt install -y mkvtoolnix
 
+#tsmux
+wget -qO - https://download.opensuse.org/repositories/home:/justdan96/Ubuntu_debbuild_$(lsb_release -r -s)/Release.key | sudo apt-key add -
+echo "deb https://download.opensuse.org/repositories/home:/justdan96/Ubuntu_debbuild_$(lsb_release -r -s)  ./" | sudo tee -a /etc/apt/sources.list > /dev/null
+
 RUN wget -P /tmp https://dl.google.com/go/go1.17.1.linux-amd64.tar.gz
 RUN tar -C /usr/local -xzf /tmp/go1.17.1.linux-amd64.tar.gz
 RUN rm /tmp/go1.17.1.linux-amd64.tar.gz
